@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-ayishasandi-treasureyou-gw9vp4fthwr.ws-eu116.gitpod.io','.herokuapp.com']
 
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'recipes_app.wsgi.application'
 #}
 
 DATABASES = {
-     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
  }
 
 # Password validation
