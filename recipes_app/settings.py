@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['treasure-your-recipes.herokuapp.com', '8000-ayishasandi-treasureyou-gw9vp4fthwr.ws-eu116.gitpod.io']
+ALLOWED_HOSTS = ['treasure-your-recipes-90ccba49e0ac.herokuapp.com', '8000-ayishasandi-treasureyou-gw9vp4fthwr.ws-eu116.gitpod.io']
 
 
 # Application definition
