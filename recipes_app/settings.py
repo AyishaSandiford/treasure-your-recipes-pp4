@@ -56,7 +56,7 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL ='/'
 LOGOUT_REDIRECT_URL ='/'
 
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https") 
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -155,3 +155,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Account
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
