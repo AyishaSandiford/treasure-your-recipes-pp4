@@ -18,6 +18,8 @@ from django.urls import path, include
 from recipes import views as index_views
 from recipes import views as about_views
 from recipes import views as contact_views
+from dashboard import views as profile_views
+from dashboard import views as dashboard_views
 
 urlpatterns = [
     path('', index_views.index, name='index'),
@@ -25,4 +27,6 @@ urlpatterns = [
     path('contact/', contact_views.contact, name='contact'),
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
+    path('accounts/profile/', profile_views.profile, name='profile'),
+    path('accounts/dashboard/', dashboard_views.dashboard, name='dashboard')
 ]
